@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Analytics Portfolio | Olowu Abraham Aduragbemi</title>
-  <meta name="description" content="Data Analytics Portfolio - SQL, Python, Healthcare Analytics, Business Intelligence">
+  <meta name="description" content="Data Analytics Portfolio - SQL, Python, Machine Learning, Healthcare Analytics, Business Intelligence">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,7 +16,7 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.6;
       color: #e0e0e0;
       background: #0a0a0a;
@@ -70,6 +73,7 @@
       margin-bottom: 1rem;
       text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       animation: fadeInUp 0.8s ease;
+      letter-spacing: -1px;
     }
 
     @keyframes fadeInUp {
@@ -166,12 +170,19 @@
     .projects h2 {
       text-align: center;
       font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       color: #ffffff;
       position: relative;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%);
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .projects-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 4rem;
+      font-weight: 300;
     }
 
     .projects h2::after {
@@ -201,6 +212,8 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
       position: relative;
+      display: flex;
+      flex-direction: column;
     }
 
     .project-card::before {
@@ -234,16 +247,50 @@
       font-size: 1.5rem;
       color: #ffffff;
       margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .project-impact {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      background: linear-gradient(135deg, rgba(244, 92, 67, 0.2), rgba(102, 126, 234, 0.2));
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .project-body {
       padding: 1rem 2rem 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .project-body p {
       color: rgba(255, 255, 255, 0.8);
       margin-bottom: 1.5rem;
       line-height: 1.7;
+      flex-grow: 1;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tech-tag {
+      padding: 0.3rem 0.8rem;
+      background: rgba(102, 126, 234, 0.2);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 15px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
     }
 
     .project-links {
@@ -254,7 +301,7 @@
 
     .project-link {
       display: inline-block;
-      padding: 0.6rem 1.5rem;
+      padding: 0.7rem 1.5rem;
       background: linear-gradient(135deg, #667eea, #764ba2);
       color: #ffffff;
       text-decoration: none;
@@ -262,6 +309,7 @@
       font-size: 0.9rem;
       font-weight: 600;
       transition: all 0.3s ease;
+      text-align: center;
     }
 
     .project-link:hover {
@@ -301,12 +349,15 @@
       font-size: clamp(2rem, 4vw, 3rem);
       color: #ffffff;
       margin-bottom: 1rem;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
 
     .contact > .container > p {
       font-size: 1.2rem;
       color: rgba(255, 255, 255, 0.9);
       margin-bottom: 3rem;
+      font-weight: 300;
     }
 
     .contact-links {
@@ -374,6 +425,37 @@
       background: #667eea;
       color: #ffffff;
     }
+
+    /* Stats Section */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+      padding: 3rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
@@ -382,7 +464,7 @@
     <div class="container">
       <h1>Olowu Abraham Aduragbemi</h1>
       <p class="tagline">Data Analyst | Turning Data Into Actionable Insights</p>
-      <p class="skills">SQL • Python • Pandas • Healthcare Analytics • Business Intelligence</p>
+      <p class="skills">SQL • Python • Machine Learning • Healthcare Analytics • Business Intelligence</p>
       <div class="cta-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -394,14 +476,64 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Featured Projects</h2>
+      <p class="projects-subtitle">Data-driven solutions delivering measurable business impact</p>
+
+      <!-- Portfolio Stats -->
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">$4.4M+</div>
+          <div class="stat-label">Revenue Impact</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">84%</div>
+          <div class="stat-label">Model Accuracy</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Records Analyzed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">411%</div>
+          <div class="stat-label">ROI Achieved</div>
+        </div>
+      </div>
+
       <div class="project-grid">
-        <!-- Project 1 -->
+        <!-- Project 1: Customer Churn -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Customer Churn Prediction</h3>
+            <span class="project-impact">🎯 $1.73M Revenue at Risk | 411% ROI</span>
+          </div>
+          <div class="project-body">
+            <p>Built machine learning model to predict telecom customer churn with 84.2% accuracy. Identified key drivers of attrition and quantified business impact of targeted retention strategies, protecting $577K in Year 1 revenue.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Random Forest</span>
+              <span class="tech-tag">ROI Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Ethminer001/customer-churn-prediction" class="project-link" target="_blank">View Code</a>
+              <a href="https://github.com/Ethminer001/customer-churn-prediction#readme" class="project-link" target="_blank">Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Sales Performance -->
         <div class="project-card">
           <div class="project-header">
             <h3>Sales Performance Analysis</h3>
+            <span class="project-impact">💰 $2M Revenue Recovery</span>
           </div>
           <div class="project-body">
-            <p>Analyzed quarterly sales data to identify $2M revenue recovery opportunity through data-driven insights and strategic recommendations.</p>
+            <p>Analyzed quarterly sales data to identify $2M revenue recovery opportunity through data-driven insights and strategic recommendations. Delivered actionable recommendations for pricing adjustments and sales forecasting.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
             <div class="project-links">
               <a href="https://github.com/Ethminer001/sales-analysis" class="project-link" target="_blank">View Code</a>
               <a href="https://github.com/Ethminer001/sales-analysis#readme" class="project-link" target="_blank">Read More</a>
@@ -409,13 +541,20 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 3: Patient Retention -->
         <div class="project-card">
           <div class="project-header">
             <h3>Patient Retention Analysis</h3>
+            <span class="project-impact">🏥 23% No-Show Reduction | $2.4M Recovered</span>
           </div>
           <div class="project-body">
-            <p>Built predictive model to reduce patient no-show rates by 23% and recover $2.4M in potential revenue through intelligent scheduling optimization.</p>
+            <p>Built predictive model to reduce patient no-show rates by 23% and recover $2.4M in potential revenue through intelligent scheduling optimization and improved resource utilization.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Predictive Modeling</span>
+            </div>
             <div class="project-links">
               <a href="https://github.com/Ethminer001/patient-retention-analysis" class="project-link" target="_blank">View Code</a>
               <a href="https://github.com/Ethminer001/patient-retention-analysis#readme" class="project-link" target="_blank">Read More</a>
@@ -423,13 +562,20 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4: Retail Intelligence -->
         <div class="project-card">
           <div class="project-header">
             <h3>Retail Sales Intelligence</h3>
+            <span class="project-impact">🛒 50K+ Transactions Optimized</span>
           </div>
           <div class="project-body">
-            <p>Analyzed 50K+ retail transactions to optimize pricing strategy, staffing schedules, and inventory management, driving operational efficiency.</p>
+            <p>Analyzed 50K+ retail transactions to optimize pricing strategy, staffing schedules, and inventory management. Identified patterns driving operational efficiency and revenue growth.</p>
+            <div class="project-tech">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Seaborn</span>
+            </div>
             <div class="project-links">
               <a href="https://github.com/Ethminer001/retail-sales-analysis" class="project-link" target="_blank">View Code</a>
               <a href="https://github.com/Ethminer001/retail-sales-analysis#readme" class="project-link" target="_blank">Read More</a>

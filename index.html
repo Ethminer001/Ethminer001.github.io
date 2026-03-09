@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Analytics Portfolio | Olowu Abraham Aduragbemi</title>
-  <meta name="description" content="Data Analytics Portfolio - SQL, Python, Machine Learning, Healthcare Analytics, Business Intelligence">
+  <meta name="description" content="Data Analytics Portfolio - SQL, Python, Machine Learning, Fintech Analytics, Business Intelligence">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -204,6 +204,21 @@
       margin-top: 3rem;
     }
 
+    /* Featured project spans full width */
+    .project-card.featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid rgba(102, 126, 234, 0.4);
+      box-shadow: 0 0 30px rgba(102, 126, 234, 0.15);
+    }
+
+    .project-card.featured .project-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .project-card {
       background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
       border-radius: 20px;
@@ -260,6 +275,19 @@
       color: #ffffff;
       margin-top: 0.5rem;
       border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .featured-badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      background: linear-gradient(135deg, #f45c43, #667eea);
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.8rem;
     }
 
     .project-body {
@@ -402,6 +430,10 @@
         grid-template-columns: 1fr;
       }
 
+      .project-card.featured {
+        grid-template-columns: 1fr;
+      }
+
       .cta-buttons,
       .contact-links {
         flex-direction: column;
@@ -429,7 +461,7 @@
     /* Stats Section */
     .stats {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 2rem;
       margin: 4rem 0;
       padding: 3rem 0;
@@ -463,8 +495,8 @@
   <section class="hero">
     <div class="container">
       <h1>Olowu Abraham Aduragbemi</h1>
-      <p class="tagline">Data Analyst | Turning Data Into Actionable Insights</p>
-      <p class="skills">SQL • Python • Machine Learning • Healthcare Analytics • Business Intelligence</p>
+      <p class="tagline">Data Scientist | Data Analyst</p>
+      <p class="skills">SQL • Python • Machine Learning • Fintech Analytics • Business Intelligence • Streamlit</p>
       <div class="cta-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -485,20 +517,50 @@
           <div class="stat-label">Revenue Impact</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">84%</div>
-          <div class="stat-label">Model Accuracy</div>
+          <div class="stat-number">97%+</div>
+          <div class="stat-label">Best Model ROC-AUC</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">50K+</div>
+          <div class="stat-number">600K+</div>
           <div class="stat-label">Records Analyzed</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">411%</div>
           <div class="stat-label">ROI Achieved</div>
         </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">End-to-End Projects</div>
+        </div>
       </div>
 
       <div class="project-grid">
+        <!-- FEATURED: Fintech Merchant Intelligence -->
+        <div class="project-card featured">
+          <div class="project-header">
+            <span class="featured-badge">Featured Project</span>
+            <h3>Fintech Transaction Intelligence & Merchant Risk Scoring</h3>
+            <span class="project-impact">🏦 ₦4.02B Revenue at Risk | 97%+ ROC-AUC | Live Dashboard</span>
+          </div>
+          <div class="project-body">
+            <p>Built end-to-end merchant risk scoring platform analyzing 600K+ payment transactions across 5,000 Nigerian fintech merchants. Wrote 23 SQL queries (CTEs, window functions, NTILE tiering), engineered 40+ features, and deployed XGBoost model with SHAP explainability. Top 10% of merchants drive 65.9% of total volume — ₦4.02B (15.3%) sits with high-risk merchants. Deployed as a live 4-page Streamlit dashboard.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">SHAP</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">NTILE</span>
+              <span class="tech-tag">Window Functions</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Ethminer001/fintech-merchant-intelligence" class="project-link" target="_blank">View Code</a>
+              <a href="https://fintech-merchant-intelligence-astcmpgnb72vpycszmzfir.streamlit.app/" class="project-link" target="_blank">Live Dashboard</a>
+              <a href="https://github.com/Ethminer001/fintech-merchant-intelligence#readme" class="project-link" target="_blank">Case Study</a>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1: Customer Churn -->
         <div class="project-card">
           <div class="project-header">
@@ -590,7 +652,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Let's Work Together</h2>
-      <p>I'm currently open to data analyst roles and freelance projects.</p>
+      <p>I'm currently open to data analyst and data scientist roles.</p>
       <div class="contact-links">
         <a href="https://www.linkedin.com/in/eriioluwa" class="contact-link" target="_blank">LinkedIn</a>
         <a href="https://github.com/Ethminer001" class="contact-link" target="_blank">GitHub</a>

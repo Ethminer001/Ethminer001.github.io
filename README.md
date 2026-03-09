@@ -26,14 +26,34 @@ I'm a Data Analyst passionate about leveraging data to drive business decisions 
 ## 📈 Portfolio Impact
 
 - ✅ **$4.4M+** in identified revenue opportunities
+- ✅ **₦4.02B** revenue at risk identified in fintech ecosystem
+- ✅ **97%+** ROC-AUC (XGBoost, 5-fold cross-validated)
 - ✅ **84.2%** model accuracy (Random Forest)
-- ✅ **50K+** data points analyzed across projects
+- ✅ **600K+** transactions analyzed across projects
 - ✅ **411%** ROI achieved on retention programs
 - ✅ **23%** improvement in operational metrics
 
 ---
 
 ## 🚀 Featured Projects
+
+### 🏦 Fintech Transaction Intelligence & Merchant Risk Scoring
+**Impact:** ₦4.02B Revenue at Risk Identified • 97%+ XGBoost ROC-AUC • 600K+ Transactions Analyzed
+
+End-to-end data analytics and machine learning project analyzing **600,000+ payment transactions** across **5,000 merchants** in the Nigerian fintech ecosystem. Built to identify high-risk merchants, detect transaction anomalies, and power strategic decisions for payment companies. Deployed a live interactive dashboard for real-time merchant intelligence.
+
+**Key Results:**
+- Flagged 973 merchants (19.5%) as Very High Risk, representing ₦4.02B (15.3%) of platform volume
+- XGBoost model achieved 97%+ ROC-AUC (5-fold cross-validated), outperforming Logistic Regression and Random Forest
+- Top 10% of merchants drive 65.9% of total platform volume (₦26.3B)
+- Identified peak fraud windows (1–2 AM and 4 PM) enabling targeted real-time monitoring
+- Engineered 40+ merchant-level features and executed 23 advanced SQL queries (CTEs, window functions, NTILE)
+
+**Tech Stack:** `Python` `XGBoost` `SHAP` `SMOTE` `Scikit-learn` `MySQL` `Streamlit` `Pandas` `NumPy`
+
+🔗 [View Project](https://github.com/Ethminer001/fintech-merchant-intelligence) | 🚀 [Live Dashboard](https://fintech-merchant-intelligence-astcmpgnb72vpycszmzfir.streamlit.app/) | 📖 [Read Case Study](https://github.com/Ethminer001/fintech-merchant-intelligence#readme)
+
+---
 
 ### 📞 Customer Churn Prediction - Telecom Analytics
 **Impact:** $1.73M Revenue at Risk Identified • 411% Year 1 ROI • 84.2% Model Accuracy
@@ -97,7 +117,7 @@ Experience my full portfolio with interactive project showcases:
 
 Download my complete resume to learn more about my experience and qualifications:
 
-📥 [**Download Resume (PDF)**](OAA%20Resumex%202026.pdf)
+📥 [**Download Resume (PDF)**](Olowu_Abraham_Aduragbemi_Resume.pdf)
 
 ---
 
@@ -117,10 +137,10 @@ I'm currently **open to data analyst roles** and **freelance opportunities**. Wh
 ## 🛠️ Technical Skills
 
 **Languages & Tools:**
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost)
 - SQL (PostgreSQL, MySQL, SQL Server)
 - Excel (Advanced formulas, Pivot Tables, Power Query)
-- Data Visualization (Tableau, Power BI)
+- Data Visualization (Tableau, Power BI, Streamlit)
 - Git & GitHub
 
 **Specializations:**
@@ -129,6 +149,7 @@ I'm currently **open to data analyst roles** and **freelance opportunities**. Wh
 - Statistical Analysis & Hypothesis Testing
 - Business Intelligence & ROI Analysis
 - Healthcare Analytics
+- Fintech & Payment Analytics
 - Customer Segmentation
 - A/B Testing
 
@@ -151,6 +172,6 @@ I'm currently **open to data analyst roles** and **freelance opportunities**. Wh
 
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/Ethminer001)
 
-*Last Updated: January 2026*
+*Last Updated: March 2026*
 
 </div>

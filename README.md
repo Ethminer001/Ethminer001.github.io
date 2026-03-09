@@ -117,8 +117,7 @@ Experience my full portfolio with interactive project showcases:
 
 Download my complete resume to learn more about my experience and qualifications:
 
-📥 [**Download Resume (PDF)**](Olowu_Abraham_Aduragbemi_Resume.pdf)
-
+📥 [**Download Resume (PDF)**](https://raw.githubusercontent.com/Ethminer001/Ethminer001.github.io/main/Olowu_Abraham_Aduragbemi_Resume.pdf)
 ---
 
 ## 🤝 Let's Connect

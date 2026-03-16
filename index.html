@@ -167,13 +167,14 @@
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 2rem; text-align: center;
     }
-    .stat-item { padding: 1.5rem; }
-    .stat-number {
-      font-size: 2.2rem; font-weight: 900; line-height: 1;
-      background: linear-gradient(135deg, var(--purple), var(--orange));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      margin-bottom: 0.5rem;
-    }
+   .stat-number {
+  font-size: 2.2rem; font-weight: 900; line-height: 1.2;
+  background: linear-gradient(135deg, var(--purple), var(--orange));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.15rem;
+  overflow: visible;
+}
     .stat-label { color: var(--muted); font-size: 0.9rem; font-weight: 500; }
 
     /* ── PROJECTS ── */

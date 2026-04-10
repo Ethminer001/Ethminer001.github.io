@@ -40,7 +40,6 @@
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 1rem 0;
@@ -57,26 +56,17 @@
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none; font-size: 0.9rem;
-      font-weight: 500; transition: color 0.2s;
-    }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: #fff; }
 
-    /* ── HERO ── */
     .hero {
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
       background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
     }
-    .hero-bg {
-      position: absolute; inset: 0; overflow: hidden;
-    }
-    .hero-orb {
-      position: absolute; border-radius: 50%;
-      filter: blur(80px); opacity: 0.15; animation: float 20s ease infinite;
-    }
+    .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+    .hero-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.15; animation: float 20s ease infinite; }
     .hero-orb-1 { width: 600px; height: 600px; background: var(--purple); top: -200px; left: -200px; }
     .hero-orb-2 { width: 500px; height: 500px; background: var(--violet); bottom: -200px; right: -200px; animation-delay: -7s; }
     .hero-orb-3 { width: 400px; height: 400px; background: var(--orange); top: 30%; left: 40%; animation-delay: -14s; }
@@ -112,266 +102,83 @@
       background: linear-gradient(135deg, var(--purple), var(--orange), var(--violet));
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .hero-tagline {
-      font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--muted);
-      font-weight: 300; margin-bottom: 1.5rem;
-      animation: fadeInUp 0.6s ease 0.2s backwards;
-    }
-    .hero-skills {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;
-      margin-bottom: 3rem;
-      animation: fadeInUp 0.6s ease 0.3s backwards;
-    }
-    .skill-pill {
-      padding: 0.4rem 1rem;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--border);
-      border-radius: 50px; font-size: 0.85rem;
-      color: rgba(255,255,255,0.8); font-weight: 500;
-    }
-    .hero-cta {
-      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
-      animation: fadeInUp 0.6s ease 0.4s backwards;
-    }
+    .hero-tagline { font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--muted); font-weight: 300; margin-bottom: 1.5rem; animation: fadeInUp 0.6s ease 0.2s backwards; }
+    .hero-skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 3rem; animation: fadeInUp 0.6s ease 0.3s backwards; }
+    .skill-pill { padding: 0.4rem 1rem; background: rgba(255,255,255,0.06); border: 1px solid var(--border); border-radius: 50px; font-size: 0.85rem; color: rgba(255,255,255,0.8); font-weight: 500; }
+    .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.6s ease 0.4s backwards; }
 
-    @keyframes fadeInUp {
-      from { opacity:0; transform: translateY(30px); }
-      to { opacity:1; transform: translateY(0); }
-    }
+    @keyframes fadeInUp { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
 
-    .btn {
-      display: inline-block; padding: 0.9rem 2.2rem;
-      border-radius: 50px; font-weight: 700; font-size: 0.95rem;
-      text-decoration: none; transition: all 0.3s ease; cursor: pointer;
-    }
-    .btn-primary {
-      background: linear-gradient(135deg, var(--purple), var(--violet));
-      color: #fff; box-shadow: 0 8px 32px rgba(102,126,234,0.35);
-    }
+    .btn { display: inline-block; padding: 0.9rem 2.2rem; border-radius: 50px; font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
+    .btn-primary { background: linear-gradient(135deg, var(--purple), var(--violet)); color: #fff; box-shadow: 0 8px 32px rgba(102,126,234,0.35); }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(102,126,234,0.5); }
-    .btn-outline {
-      background: transparent; color: #fff;
-      border: 2px solid rgba(255,255,255,0.2);
-    }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.2); }
     .btn-outline:hover { background: rgba(255,255,255,0.08); transform: translateY(-3px); }
 
-    /* ── STATS ── */
-    .stats-section {
-      padding: 5rem 0;
-      background: linear-gradient(180deg, var(--dark) 0%, var(--dark3) 100%);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2rem; text-align: center;
-    }
-   .stat-number {
-  font-size: 2.2rem; font-weight: 900; line-height: 1.2;
-  background: linear-gradient(135deg, var(--purple), var(--orange));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.15rem;
-  overflow: visible;
-}
+    .stats-section { padding: 5rem 0; background: linear-gradient(180deg, var(--dark) 0%, var(--dark3) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; text-align: center; }
+    .stat-number { font-size: 2.2rem; font-weight: 900; line-height: 1.2; background: linear-gradient(135deg, var(--purple), var(--orange)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem; padding-bottom: 0.15rem; overflow: visible; }
     .stat-label { color: var(--muted); font-size: 0.9rem; font-weight: 500; }
 
-    /* ── PROJECTS ── */
-    .projects {
-      padding: 7rem 0;
-      background: linear-gradient(180deg, var(--dark3) 0%, var(--dark) 50%, var(--dark3) 100%);
-    }
+    .projects { padding: 7rem 0; background: linear-gradient(180deg, var(--dark3) 0%, var(--dark) 50%, var(--dark3) 100%); }
     .section-header { text-align: center; margin-bottom: 5rem; }
-    .section-tag {
-      display: inline-block; padding: 0.4rem 1rem;
-      background: rgba(102,126,234,0.15);
-      border: 1px solid rgba(102,126,234,0.25);
-      border-radius: 50px; font-size: 0.8rem; color: var(--purple);
-      font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
-      margin-bottom: 1rem;
-    }
-    .section-header h2 {
-      font-size: clamp(2rem, 4vw, 3.2rem); color: #fff;
-      font-weight: 900; letter-spacing: -1.5px; margin-bottom: 1rem;
-    }
+    .section-tag { display: inline-block; padding: 0.4rem 1rem; background: rgba(102,126,234,0.15); border: 1px solid rgba(102,126,234,0.25); border-radius: 50px; font-size: 0.8rem; color: var(--purple); font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1rem; }
+    .section-header h2 { font-size: clamp(2rem, 4vw, 3.2rem); color: #fff; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 1rem; }
     .section-header p { color: var(--muted); font-size: 1.1rem; font-weight: 300; }
 
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 2rem;
-    }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; }
 
-    /* FEATURED */
-    .project-card.featured {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border: 1px solid rgba(102,126,234,0.35);
-      box-shadow: 0 0 60px rgba(102,126,234,0.1), inset 0 1px 0 rgba(255,255,255,0.05);
-    }
+    .project-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid rgba(102,126,234,0.35); box-shadow: 0 0 60px rgba(102,126,234,0.1), inset 0 1px 0 rgba(255,255,255,0.05); }
     .project-card.featured .project-header { display: flex; flex-direction: column; justify-content: center; }
+    .project-card.featured.gold-card { border-color: rgba(201,168,76,0.35); box-shadow: 0 0 60px rgba(201,168,76,0.08), inset 0 1px 0 rgba(255,255,255,0.05); }
 
-    .project-card {
-      background: var(--card);
-      border-radius: 24px; overflow: hidden;
-      border: 1px solid var(--border);
-      transition: all 0.4s ease;
-      position: relative;
-      display: flex; flex-direction: column;
-    }
-    .project-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--purple), var(--violet), var(--orange));
-      transform: scaleX(0); transform-origin: left;
-      transition: transform 0.4s ease;
-    }
+    .project-card { background: var(--card); border-radius: 24px; overflow: hidden; border: 1px solid var(--border); transition: all 0.4s ease; position: relative; display: flex; flex-direction: column; }
+    .project-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--purple), var(--violet), var(--orange)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
     .project-card:hover::before { transform: scaleX(1); }
-    .project-card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(102,126,234,0.25);
-      box-shadow: 0 24px 64px rgba(102,126,234,0.2);
-      background: rgba(255,255,255,0.06);
-    }
+    .project-card:hover { transform: translateY(-8px); border-color: rgba(102,126,234,0.25); box-shadow: 0 24px 64px rgba(102,126,234,0.2); background: rgba(255,255,255,0.06); }
 
-    .project-header {
-      padding: 2rem 2rem 1.5rem;
-      background: linear-gradient(135deg, rgba(102,126,234,0.12) 0%, rgba(118,75,162,0.12) 100%);
-      border-bottom: 1px solid var(--border);
-    }
-    .project-header h3 {
-      font-size: 1.35rem; color: #fff; font-weight: 800;
-      margin-bottom: 0.75rem; line-height: 1.3;
-    }
+    .project-header { padding: 2rem 2rem 1.5rem; background: linear-gradient(135deg, rgba(102,126,234,0.12) 0%, rgba(118,75,162,0.12) 100%); border-bottom: 1px solid var(--border); }
+    .project-header.gold-header { background: linear-gradient(135deg, rgba(27,42,74,0.4) 0%, rgba(201,168,76,0.1) 100%); }
+    .project-header h3 { font-size: 1.35rem; color: #fff; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.3; }
 
     .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .featured-badge { padding: 0.3rem 0.9rem; background: linear-gradient(135deg, var(--orange), var(--purple)); border-radius: 50px; font-size: 0.7rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 1.5px; }
+    .new-badge { padding: 0.3rem 0.9rem; background: linear-gradient(135deg, var(--green), var(--teal)); border-radius: 50px; font-size: 0.7rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 1.5px; }
+    .research-badge { padding: 0.3rem 0.9rem; background: linear-gradient(135deg, #1B2A4A, #C9A84C); border-radius: 50px; font-size: 0.7rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 1.5px; }
 
-    .featured-badge {
-      padding: 0.3rem 0.9rem;
-      background: linear-gradient(135deg, var(--orange), var(--purple));
-      border-radius: 50px; font-size: 0.7rem; font-weight: 800;
-      color: #fff; text-transform: uppercase; letter-spacing: 1.5px;
-    }
-    .new-badge {
-      padding: 0.3rem 0.9rem;
-      background: linear-gradient(135deg, var(--green), var(--teal));
-      border-radius: 50px; font-size: 0.7rem; font-weight: 800;
-      color: #fff; text-transform: uppercase; letter-spacing: 1.5px;
-    }
+    .project-impact { display: inline-block; padding: 0.4rem 1rem; background: rgba(244,92,67,0.15); border: 1px solid rgba(244,92,67,0.25); border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: #fca5a5; }
 
-    .project-impact {
-      display: inline-block; padding: 0.4rem 1rem;
-      background: rgba(244,92,67,0.15);
-      border: 1px solid rgba(244,92,67,0.25);
-      border-radius: 50px; font-size: 0.82rem;
-      font-weight: 600; color: #fca5a5;
-    }
-
-    .project-body {
-      padding: 1.5rem 2rem 2rem;
-      flex-grow: 1; display: flex; flex-direction: column;
-    }
-    .project-body p {
-      color: rgba(255,255,255,0.72); margin-bottom: 1.5rem;
-      line-height: 1.75; flex-grow: 1; font-size: 0.95rem;
-    }
+    .project-body { padding: 1.5rem 2rem 2rem; flex-grow: 1; display: flex; flex-direction: column; }
+    .project-body p { color: rgba(255,255,255,0.72); margin-bottom: 1.5rem; line-height: 1.75; flex-grow: 1; font-size: 0.95rem; }
 
     .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
-    .tech-tag {
-      padding: 0.3rem 0.8rem;
-      background: rgba(102,126,234,0.15);
-      border: 1px solid rgba(102,126,234,0.25);
-      border-radius: 50px; font-size: 0.78rem;
-      color: #a5b4fc; font-weight: 600;
-    }
+    .tech-tag { padding: 0.3rem 0.8rem; background: rgba(102,126,234,0.15); border: 1px solid rgba(102,126,234,0.25); border-radius: 50px; font-size: 0.78rem; color: #a5b4fc; font-weight: 600; }
 
     .project-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-    .project-link {
-      padding: 0.65rem 1.4rem;
-      background: linear-gradient(135deg, var(--purple), var(--violet));
-      color: #fff; text-decoration: none; border-radius: 50px;
-      font-size: 0.85rem; font-weight: 700; transition: all 0.3s ease;
-    }
-    .project-link:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(102,126,234,0.45);
-    }
-    .project-link.outline {
-      background: transparent;
-      border: 1.5px solid rgba(102,126,234,0.4);
-      color: #a5b4fc;
-    }
-    .project-link.outline:hover {
-      background: rgba(102,126,234,0.15);
-      box-shadow: 0 8px 24px rgba(102,126,234,0.2);
-    }
+    .project-link { padding: 0.65rem 1.4rem; background: linear-gradient(135deg, var(--purple), var(--violet)); color: #fff; text-decoration: none; border-radius: 50px; font-size: 0.85rem; font-weight: 700; transition: all 0.3s ease; }
+    .project-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(102,126,234,0.45); }
+    .project-link.outline { background: transparent; border: 1.5px solid rgba(102,126,234,0.4); color: #a5b4fc; }
+    .project-link.outline:hover { background: rgba(102,126,234,0.15); box-shadow: 0 8px 24px rgba(102,126,234,0.2); }
 
-    /* ── SKILLS ── */
-    .skills-section {
-      padding: 6rem 0;
-      background: linear-gradient(180deg, var(--dark) 0%, var(--dark3) 100%);
-      border-top: 1px solid var(--border);
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem; margin-top: 3rem;
-    }
-    .skill-card {
-      padding: 2rem; background: var(--card);
-      border: 1px solid var(--border); border-radius: 20px;
-      transition: all 0.3s ease;
-    }
+    .skills-section { padding: 6rem 0; background: linear-gradient(180deg, var(--dark) 0%, var(--dark3) 100%); border-top: 1px solid var(--border); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .skill-card { padding: 2rem; background: var(--card); border: 1px solid var(--border); border-radius: 20px; transition: all 0.3s ease; }
     .skill-card:hover { border-color: rgba(102,126,234,0.3); transform: translateY(-4px); }
     .skill-icon { font-size: 2rem; margin-bottom: 1rem; }
     .skill-card h4 { color: #fff; font-weight: 700; margin-bottom: 0.75rem; }
     .skill-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
 
-    /* ── CONTACT ── */
-    .contact {
-      padding: 7rem 0;
-      background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 50%, #1a1a2e 100%);
-      position: relative; overflow: hidden;
-    }
-    .contact::before {
-      content: ''; position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 70% 30%, rgba(244,92,67,0.2) 0%, transparent 50%),
-        radial-gradient(circle at 30% 70%, rgba(102,126,234,0.2) 0%, transparent 50%);
-      animation: float 20s ease infinite;
-    }
+    .contact { padding: 7rem 0; background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 50%, #1a1a2e 100%); position: relative; overflow: hidden; }
+    .contact::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(244,92,67,0.2) 0%, transparent 50%), radial-gradient(circle at 30% 70%, rgba(102,126,234,0.2) 0%, transparent 50%); animation: float 20s ease infinite; }
     .contact .container { position: relative; z-index: 2; text-align: center; }
-    .contact h2 {
-      font-size: clamp(2rem, 4vw, 3.5rem); color: #fff;
-      font-weight: 900; letter-spacing: -1.5px; margin-bottom: 1rem;
-    }
-    .contact > .container > p {
-      font-size: 1.15rem; color: rgba(255,255,255,0.85);
-      margin-bottom: 3rem; font-weight: 300;
-    }
+    .contact h2 { font-size: clamp(2rem, 4vw, 3.5rem); color: #fff; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 1rem; }
+    .contact > .container > p { font-size: 1.15rem; color: rgba(255,255,255,0.85); margin-bottom: 3rem; font-weight: 300; }
     .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .contact-link {
-      padding: 0.9rem 2rem;
-      background: rgba(255,255,255,0.12);
-      color: #fff; text-decoration: none; border-radius: 50px;
-      font-weight: 700; transition: all 0.3s ease;
-      border: 1.5px solid rgba(255,255,255,0.25);
-      backdrop-filter: blur(10px); font-size: 0.95rem;
-    }
-    .contact-link:hover {
-      background: #fff; color: var(--purple);
-      transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
+    .contact-link { padding: 0.9rem 2rem; background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 700; transition: all 0.3s ease; border: 1.5px solid rgba(255,255,255,0.25); backdrop-filter: blur(10px); font-size: 0.95rem; }
+    .contact-link:hover { background: #fff; color: var(--purple); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
 
-    /* ── FOOTER ── */
-    footer {
-      padding: 2rem 0; background: #050505;
-      text-align: center; color: var(--muted);
-      border-top: 1px solid var(--border); font-size: 0.9rem;
-    }
+    footer { padding: 2rem 0; background: #050505; text-align: center; color: var(--muted); border-top: 1px solid var(--border); font-size: 0.9rem; }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .project-card.featured { grid-template-columns: 1fr; }
       .project-grid { grid-template-columns: 1fr; }
@@ -382,7 +189,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="container">
       <a href="#" class="nav-logo">Erii.data</a>
@@ -394,7 +200,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
       <div class="hero-orb hero-orb-1"></div>
@@ -412,6 +217,7 @@
         <span class="skill-pill">Machine Learning</span>
         <span class="skill-pill">Fintech Analytics</span>
         <span class="skill-pill">Streamlit</span>
+        <span class="skill-pill">Statistical Analysis</span>
         <span class="skill-pill">Business Intelligence</span>
       </div>
       <div class="hero-cta">
@@ -421,7 +227,6 @@
     </div>
   </section>
 
-  <!-- STATS -->
   <section class="stats-section">
     <div class="container">
       <div class="stats-grid">
@@ -434,15 +239,15 @@
           <div class="stat-label">Best Model ROC-AUC</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">600K+</div>
+          <div class="stat-number">626K+</div>
           <div class="stat-label">Records Analyzed</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">46</div>
+          <div class="stat-number">46+</div>
           <div class="stat-label">SQL Queries Written</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">6</div>
+          <div class="stat-number">7</div>
           <div class="stat-label">End-to-End Projects</div>
         </div>
         <div class="stat-item">
@@ -453,7 +258,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects" class="projects">
     <div class="container">
       <div class="section-header">
@@ -467,14 +271,12 @@
         <!-- FEATURED: Fintech Merchant Intelligence -->
         <div class="project-card featured">
           <div class="project-header">
-            <div class="badge-row">
-              <span class="featured-badge">Featured Project</span>
-            </div>
+            <div class="badge-row"><span class="featured-badge">Featured Project</span></div>
             <h3>Fintech Transaction Intelligence & Merchant Risk Scoring</h3>
             <span class="project-impact">🏦 ₦4.02B Revenue at Risk · 97%+ ROC-AUC · Live Dashboard</span>
           </div>
           <div class="project-body">
-            <p>Built an end-to-end merchant risk scoring platform analyzing 600K+ payment transactions across 5,000 Nigerian fintech merchants. Wrote 23 SQL queries including CTEs, window functions, and NTILE tiering. Engineered 40+ features and deployed an XGBoost model with SHAP explainability. Top 10% of merchants drive 65.9% of total volume — ₦4.02B (15.3%) sits with high-risk merchants. Deployed as a live 4-page Streamlit dashboard.</p>
+            <p>Built an end-to-end merchant risk scoring platform analyzing 600K+ payment transactions across 5,000 Nigerian fintech merchants. Wrote 23 SQL queries including CTEs, window functions, and NTILE tiering. Engineered 40+ features and deployed an XGBoost model with SHAP explainability. Top 10% of merchants drive 65.9% of total volume — ₦4.02B (15.3%) sits with high-risk merchants. Fraud peaks at 3.45% between 1AM and 2AM, a consistent behavioral pattern across the dataset. Deployed as a live 4-page Streamlit dashboard.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">MySQL</span>
@@ -492,17 +294,44 @@
           </div>
         </div>
 
-        <!-- NEW: Nigerian Fintech Marketing Channel Analysis -->
-        <div class="project-card">
-          <div class="project-header">
+        <!-- The Last 40 Million -->
+        <div class="project-card featured gold-card">
+          <div class="project-header gold-header">
             <div class="badge-row">
+              <span class="research-badge">Statistical Research</span>
               <span class="new-badge">New</span>
             </div>
+            <h3>The Last 40 Million — Financial Exclusion in Nigeria</h3>
+            <span class="project-impact">📊 26,930 Respondents · 6 Modules · Live Dashboard · 14-Page Report</span>
+          </div>
+          <div class="project-body">
+            <p>Inferential statistical analysis of EFInA's 2023 nationally representative survey to identify which excluded Nigerians are financially ready but structurally blocked — and what each group needs. Six analytical modules covering demographic profiling, barrier analysis, chi-square hypothesis testing, logistic regression on 26,361 observations (McFadden R² = 0.2590), and a natural experiment on the Naira redesign policy shock. Key finding: education predicts exclusion at 34x odds ratio, and financial exclusion in Nigeria is primarily a poverty problem, not a distance problem. Only 0.8% of excluded adults responded to the 2023 cash crunch.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">statsmodels</span>
+              <span class="tech-tag">SciPy</span>
+              <span class="tech-tag">Logistic Regression</span>
+              <span class="tech-tag">Chi-Square</span>
+              <span class="tech-tag">EFInA A2F 2023</span>
+              <span class="tech-tag">HTML Dashboard</span>
+            </div>
+            <div class="project-links">
+              <a href="https://the-last-40-million.vercel.app" class="project-link" target="_blank">Live Dashboard</a>
+              <a href="https://github.com/Ethminer001/the-last-40-million" class="project-link" target="_blank">View Code</a>
+              <a href="https://github.com/Ethminer001/the-last-40-million#readme" class="project-link outline" target="_blank">Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nigerian Fintech Marketing -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="badge-row"></div>
             <h3>Nigerian Fintech Marketing Channel Analysis</h3>
             <span class="project-impact">📊 Google vs Facebook · $358M Profit Gap · Power BI</span>
           </div>
           <div class="project-body">
-            <p>End-to-end marketing channel analysis comparing Google Ads vs Facebook Ads across 500 synthetic campaigns, 10 Nigerian industries, and 12 months. Wrote 23 SQL queries from basic aggregations to advanced window functions (RANK, LAG, NTILE, CTEs), built 10 Plotly charts, calculated 8 key business metrics, and delivered a 3-page interactive Power BI dashboard with a formal business recommendation. Google wins on efficiency; Facebook wins at scale.</p>
+            <p>Analyzed 500 ad campaigns across Google and Facebook to answer one question: where should a Nigerian fintech invest its marketing budget? Wrote 23 SQL queries from basic aggregations to advanced window functions (RANK, LAG, NTILE, CTEs), built 10 Plotly charts, and delivered a 3-page Power BI dashboard. Google wins on efficiency at $0.74 CPA vs $2.09. Facebook wins at scale with 3x larger audience reach and $20 higher ARPU.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">Plotly</span>
@@ -523,10 +352,10 @@
         <div class="project-card">
           <div class="project-header">
             <h3>Customer Churn Prediction</h3>
-            <span class="project-impact">🎯 $1.73M Revenue at Risk · 411% ROI</span>
+            <span class="project-impact">🎯 $1.73M Revenue at Risk · 84.2% ROC-AUC · 411% ROI</span>
           </div>
           <div class="project-body">
-            <p>Built a machine learning model to predict telecom customer churn with 84.2% accuracy. Identified key drivers of attrition and quantified the business impact of targeted retention strategies, protecting $577K in Year 1 revenue.</p>
+            <p>Built a Random Forest churn model on 7,043 telecom subscribers. Contract type was the strongest predictor — month-to-month customers churned at 5x the rate of annual holders. Identified 1,200 high-risk customers representing $1.73M in annual revenue at risk. Retention strategy targeting contract migration and early-tenure onboarding projects $577K protected in Year 1 at 411% ROI.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">Scikit-learn</span>
@@ -543,11 +372,11 @@
         <!-- Sales Performance -->
         <div class="project-card">
           <div class="project-header">
-            <h3>Sales Performance Analysis</h3>
-            <span class="project-impact">💰 $2M Revenue Recovery Opportunity</span>
+            <h3>Sales Performance Diagnostic</h3>
+            <span class="project-impact">💰 15% Quarterly Decline Diagnosed · $47K South Region Loss</span>
           </div>
           <div class="project-body">
-            <p>Analyzed quarterly sales data to identify a $2M revenue recovery opportunity through data-driven insights. Delivered actionable recommendations for pricing adjustments, sales forecasting, and territory optimization.</p>
+            <p>Diagnosed a 15% quarterly revenue decline across regions, products, and customer segments. The South region declined 23% — $47K in lost revenue — driven by an 18% drop in the Consumer segment. Delivered targeted recommendations including a $15K email reactivation campaign for 340 lapsed customers and bundled promotions on underperforming product categories.</p>
             <div class="project-tech">
               <span class="tech-tag">SQL</span>
               <span class="tech-tag">Python</span>
@@ -565,15 +394,16 @@
         <div class="project-card">
           <div class="project-header">
             <h3>Patient Retention Analysis</h3>
-            <span class="project-impact">🏥 23% No-Show Reduction · $2.4M Recovered</span>
+            <span class="project-impact">🏥 $2.37M Revenue Recovery · 2,149% ROI</span>
           </div>
           <div class="project-body">
-            <p>Built a predictive model to reduce patient no-show rates by 23% and recover $2.4M in potential revenue through intelligent scheduling optimization and improved resource utilization across healthcare facilities.</p>
+            <p>Analyzed 110,527 medical appointments to identify drivers of a 30% patient no-show rate. SMS reminders and booking advance time were the strongest predictors. Built a stacking ensemble model, segmented patients by risk tier, and designed three interventions projected to prevent 13,000+ no-shows and recover $2.37M in Year 1 at 2,149% ROI.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">XGBoost</span>
               <span class="tech-tag">SQL</span>
-              <span class="tech-tag">Predictive Modeling</span>
+              <span class="tech-tag">SMOTE</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/Ethminer001/patient-retention-analysis" class="project-link" target="_blank">View Code</a>
@@ -586,10 +416,10 @@
         <div class="project-card">
           <div class="project-header">
             <h3>Retail Sales Intelligence</h3>
-            <span class="project-impact">🛒 50K+ Transactions Optimized</span>
+            <span class="project-impact">🛒 $262K Year 1 Net Benefit · 577% ROI</span>
           </div>
           <div class="project-body">
-            <p>Analyzed 50K+ retail transactions to optimize pricing strategy, staffing schedules, and inventory management. Identified patterns driving operational efficiency and sustainable revenue growth across product categories.</p>
+            <p>Analyzed 2,000 retail transactions across Electronics, Clothing, and Beauty to optimize pricing, staffing, and inventory. Electronics drives 40.5% of total revenue. Peak sales at 7PM and Saturday. Identified VIP customer retention, dynamic pricing, and seasonal inventory as the three highest-ROI interventions — projecting $262K net benefit and 577% ROI in Year 1.</p>
             <div class="project-tech">
               <span class="tech-tag">SQL</span>
               <span class="tech-tag">Python</span>
@@ -607,7 +437,6 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills" class="skills-section">
     <div class="container">
       <div class="section-header">
@@ -639,18 +468,17 @@
         <div class="skill-card">
           <div class="skill-icon">🏦</div>
           <h4>Fintech Analytics</h4>
-          <p>Fraud Detection, Merchant Risk Scoring, Transaction Intelligence, Marketing Analytics</p>
+          <p>Fraud Detection, Merchant Risk Scoring, Transaction Intelligence, Financial Inclusion Research</p>
         </div>
         <div class="skill-card">
           <div class="skill-icon">📈</div>
-          <h4>Business Analysis</h4>
-          <p>ROI Analysis, CPA, ARPU, Budget Optimization, Marketing Channel Analysis, Forecasting</p>
+          <h4>Statistical Analysis</h4>
+          <p>Hypothesis Testing, Logistic Regression, Chi-Square, Confidence Intervals, Odds Ratios, Effect Sizes</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Let's Work Together</h2>
@@ -658,13 +486,12 @@
       <div class="contact-links">
         <a href="https://www.linkedin.com/in/eriioluwa" class="contact-link" target="_blank">LinkedIn</a>
         <a href="https://github.com/Ethminer001" class="contact-link" target="_blank">GitHub</a>
-        <a href="/cdn-cgi/l/email-protection#3c5350534b4912485d45530e0c0c7c5b515d5550125f5351" class="contact-link">Email Me</a>
+        <a href="mailto:olowu.tayo200@gmail.com" class="contact-link">Email Me</a>
         <a href="Olowu_Abraham_Aduragbemi_Resume.pdf" download class="contact-link">Download Resume</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <p>&copy; 2026 Olowu Abraham Aduragbemi · Built with passion for data analytics</p>

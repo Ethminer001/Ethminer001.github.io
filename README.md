@@ -31,7 +31,7 @@ I'm a Data Analyst and Data Scientist based in Lagos, Nigeria. My work sits at t
 - ✅ **26,930** survey respondents analyzed (EFInA A2F 2023, nationally representative)
 - ✅ **626K+** records analyzed across projects
 - ✅ **46+** SQL queries written across projects
-- ✅ **7** end-to-end portfolio projects
+- ✅ **8** end-to-end portfolio projects
 - ✅ **411%** ROI achieved on retention programs
 
 ---
@@ -102,6 +102,17 @@ Built a Random Forest churn model on 7,043 telecom subscribers. Contract type wa
 **Tech Stack:** `Python` `Scikit-learn` `Random Forest` `Pandas` `ROI Analysis`
 
 🔗 [View Code](https://github.com/Ethminer001/customer-churn-prediction) | 📖 [Case Study](https://github.com/Ethminer001/customer-churn-prediction#readme)
+
+---
+
+### 🔍 Independent Validation & Analytical Governance — Measurement Infrastructure
+**Impact:** Multi-Module Validation Framework · Founder-Reviewed Sign-Off
+
+Serving as independent validation owner for a measurement infrastructure company building spend, financing, and risk signals for insurers, fintechs, and health platforms. Own post-run validation plus upstream scenario design, edge-case review, and interpretability risk assessment. Built a multi-module Python validation framework to reperform signal computations independently from raw inputs, catching computational defects, mapping errors, and data integrity issues before founder sign-off. Established audit trails using SHA-256 hash verification, reconciliation checklists, and structured exception logging to separate blocking defects from bounded caveats.
+
+**Tech Stack:** `Python` `SQL` `Statistical Validation` `SHA-256 Verification` `Audit Methodology` `Signal Integrity`
+
+📖 Case Study — Available on Request
 
 ---
 

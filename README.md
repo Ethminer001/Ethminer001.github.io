@@ -25,27 +25,29 @@ I'm a Data Analyst and Data Scientist based in Lagos, Nigeria. My work sits at t
 
 ## 📈 Portfolio Impact
 
-- ✅ **$4.4M+** in identified revenue opportunities
-- ✅ **₦4.02B** revenue at risk identified in fintech ecosystem
-- ✅ **97%+** ROC-AUC (XGBoost, 5-fold cross-validated)
-- ✅ **26,930** survey respondents analyzed (EFInA A2F 2023, nationally representative)
+- ✅ **$4.4M+** in projected revenue opportunities across portfolio projects
+- ✅ **₦4.02B** merchant volume flagged at-risk (synthetic fintech dataset)
+- ✅ **0.97** best-model ROC-AUC (XGBoost, 5-fold CV on synthetic data)
+- ✅ **26,930** survey respondents analyzed (EFInA A2F 2023, nationally representative — real data)
 - ✅ **626K+** records analyzed across projects
 - ✅ **46+** SQL queries written across projects
 - ✅ **8** end-to-end portfolio projects
-- ✅ **411%** ROI achieved on retention programs
+- ✅ **411%** projected Year-1 ROI (retention program design)
 
 ---
 
 ## 🚀 Featured Projects
 
 ### 🏦 Fintech Transaction Intelligence & Merchant Risk Scoring
-**Impact:** ₦4.02B Revenue at Risk · 97%+ XGBoost ROC-AUC · 600K+ Transactions
+**Impact:** 973 Merchants Flagged · ₦4.02B Volume at Risk · 600K+ Transactions
 
-End-to-end data analytics and machine learning project analyzing 600,000+ payment transactions across 5,000 merchants in the Nigerian fintech ecosystem. Built to identify high-risk merchants, detect transaction anomalies, and power strategic decisions for payment companies.
+> ⚠️ Independent portfolio project on a synthetic transaction dataset.
+
+End-to-end data analytics and machine learning project analyzing 600,000+ payment transactions across 5,000 merchants in a synthetic Nigerian fintech dataset. Built to identify high-risk merchants, detect transaction anomalies, and power strategic decisions for payment companies.
 
 **Key Results:**
 - Flagged 973 merchants (19.5%) as Very High Risk representing ₦4.02B (15.3%) of platform volume
-- XGBoost model achieved 97%+ ROC-AUC outperforming Logistic Regression and Random Forest
+- XGBoost model reached 0.97 ROC-AUC (5-fold CV on the synthetic data), outperforming Logistic Regression and Random Forest
 - Top 10% of merchants drive 65.9% of total platform volume (₦26.3B)
 - Identified peak fraud windows (1–2 AM and 4 PM) enabling targeted real-time monitoring
 - Engineered 40+ features and executed 23 advanced SQL queries (CTEs, window functions, NTILE)
@@ -75,16 +77,16 @@ Inferential statistical analysis of EFInA's 2023 nationally representative surve
 ---
 
 ### 📣 Nigerian Fintech Marketing Channel Analysis
-**Impact:** $358M Profit Gap Identified · Google vs Facebook · Power BI Dashboard
+**Impact:** $0.74 vs $2.09 CPA · Google vs Facebook · Power BI Dashboard
 
-> ⚠️ Independent portfolio project using 100% synthetic data. Not affiliated with any company.
+> ⚠️ Independent portfolio project using 100% synthetic data. Not affiliated with any company. Dollar figures are model outputs on synthetic campaigns, not real results.
 
 End-to-end marketing channel analysis comparing Google Ads vs Facebook Ads across 500 synthetic campaigns, 10 Nigerian industries, and 12 months of data. Answered the business question: which platform should a Nigerian fintech company invest in?
 
 **Key Results:**
-- Google wins on efficiency: 9,541% ROI vs 4,685%, $0.74 CPA vs $2.09
-- Google generates $358M more total profit and acquires 3x more customers
-- Facebook wins at scale with larger audience reach and higher ARPU ($71 vs $51)
+- Google wins on efficiency: $0.74 CPA vs $2.09, and acquires ~3x more customers per naira
+- Facebook wins at scale: larger audience reach and higher ARPU ($71 vs $51)
+- On the synthetic spend, the efficiency gap compounds to a large total-profit difference in Google's favour
 - Built 23 SQL queries from basic aggregations to advanced window functions
 - Delivered a 3-page interactive Power BI dashboard and formal recommendation report
 
@@ -128,11 +130,11 @@ Diagnosed a 15% quarterly revenue decline across regions, products, and customer
 ---
 
 ### 🏥 Patient Retention Analysis
-**Impact:** $2.37M Revenue Recovery · 2,149% ROI · 110,527 Appointments Analyzed
+**Impact:** $2.37M Projected Recovery · 0.84 ROC-AUC · 110,527 Appointments
 
-Analyzed 110,527 medical appointments to identify drivers of a 30% patient no-show rate. SMS reminders and booking advance time were the strongest predictors. Built a stacking ensemble model, segmented patients by risk tier, and designed three interventions projected to prevent 13,000+ no-shows and recover $2.37M in Year 1 at 2,149% ROI.
+Analyzed 110,527 medical appointments (62,299 patients) from the Kaggle no-show dataset to identify drivers of a 30% no-show rate. SMS reminders and booking advance time were the strongest predictors. Built a stacking ensemble (Random Forest, Gradient Boosting, XGBoost) at **0.84 test ROC-AUC** with SMOTE balancing, segmented patients by risk tier, and designed three interventions projected to prevent 13,000+ no-shows and recover $2.37M in Year 1.
 
-**Tech Stack:** `Python` `Scikit-learn` `XGBoost` `SQL` `SMOTE`
+**Tech Stack:** `Python` `Scikit-learn` `XGBoost` `Random Forest` `Stacking` `SMOTE` `SQL`
 
 🔗 [View Code](https://github.com/Ethminer001/patient-retention-analysis) | 📖 [Case Study](https://github.com/Ethminer001/patient-retention-analysis#readme)
 

@@ -1,190 +1,39 @@
-# 📊 Olowu Abraham Aduragbemi – Data Analytics Portfolio
+# Olowu Abraham Aduragbemi: data analytics portfolio
 
-> Transforming raw data into actionable business insights | SQL • Python • Machine Learning • Power BI • Fintech Analytics
+Data analyst and data scientist in Lagos, Nigeria. Open to data analyst and data scientist roles, in Lagos or remote.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-blue?style=for-the-badge)](https://Ethminer001.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/eriioluwa)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/Ethminer001)
+Live site: https://ethminer001.github.io/
 
----
+Each case study states where its data came from. Synthetic data is made up for practice. Projected figures are estimates, not measured results.
 
-## 👋 About Me
+## Case studies
 
-I'm a Data Analyst and Data Scientist based in Lagos, Nigeria. My work sits at the intersection of statistical rigor and business context — from merchant risk scoring on 600K Nigerian fintech transactions to inferential analysis of financial exclusion across 26,930 Nigerians. I build things that are analytically honest and practically useful.
+**Current role: Data and Validation Analyst.** Independent validation of a measurement platform that sells spend, financing and risk signals. I recompute each signal from raw inputs and keep an audit trail. Details are private; the case study is available on request.
 
-**Core Competencies:**
-- 📈 Business Intelligence & Power BI Dashboards
-- 🤖 Machine Learning & Predictive Analytics
-- 🏦 Fintech Analytics, Risk Scoring & Financial Inclusion Research
-- 🐍 Python (Pandas, NumPy, Scikit-learn, statsmodels, Plotly, Streamlit)
-- 🗄️ SQL & Advanced Query Writing (Window Functions, CTEs)
-- 📊 Statistical Analysis (Hypothesis Testing, Logistic Regression, Chi-Square, Effect Sizes)
-- 💰 ROI Analysis & Business Impact Quantification
+**Ten checks on 3,164 field records from north-east Nigeria.** Real data: IOM Displacement Tracking Matrix, Rounds 51 and 52. 13.3% of records fail at least one hard check. [Read the study](https://olowu-displacement-tracking-matrix.netlify.app/)
 
----
+**What 71 Shopify stores do with price.** Real data: public catalogues, 22,956 products. 60% of products end in a round number and 20% end in .99 or a 9. [Read the study](https://olowu-pricing-study.netlify.app/)
 
-## 📈 Portfolio Impact
+**The Last 40 Million: financial exclusion in Nigeria.** Real data: EFInA 2023 survey, 26,930 adults. Education is the strongest predictor of exclusion. [Dashboard](https://the-last-40-million.vercel.app), [code](https://github.com/Ethminer001/the-last-40-million)
 
-- ✅ **$4.4M+** in projected revenue opportunities across portfolio projects
-- ✅ **₦4.02B** merchant volume flagged at-risk (synthetic fintech dataset)
-- ✅ **0.97** best-model ROC-AUC (XGBoost, 5-fold CV on synthetic data)
-- ✅ **26,930** survey respondents analyzed (EFInA A2F 2023, nationally representative — real data)
-- ✅ **626K+** records analyzed across projects
-- ✅ **46+** SQL queries written across projects
-- ✅ **8** end-to-end portfolio projects
-- ✅ **411%** projected Year-1 ROI (retention program design)
+**Merchant risk scoring on 600,000 transactions.** Synthetic data. 973 of 5,000 merchants flagged very high risk. [Dashboard](https://fintech-merchant-intelligence-astcmpgnb72vpycszmzfir.streamlit.app/) (it sleeps when unused; click the wake-up button), [code](https://github.com/Ethminer001/fintech-merchant-intelligence)
 
----
+**Google Ads or Facebook Ads for a Nigerian fintech.** Synthetic data. $0.74 against $2.09 cost per customer. [Code](https://github.com/Ethminer001/nigerian-fintech-marketing-analysis)
 
-## 🚀 Featured Projects
+**Customer churn prediction.** Kaggle Telco Customer Churn dataset. Month-to-month customers churn at 5 times the rate of annual-contract customers. Savings figures are projections. [Code](https://github.com/Ethminer001/customer-churn-prediction)
 
-### 🏦 Fintech Transaction Intelligence & Merchant Risk Scoring
-**Impact:** 973 Merchants Flagged · ₦4.02B Volume at Risk · 600K+ Transactions
+**Why patients miss appointments.** Kaggle Medical Appointment No-Shows dataset. 30% of appointments were no-shows; test ROC-AUC 0.84. Recovery figures are projections. [Code](https://github.com/Ethminer001/patient-retention-analysis)
 
-> ⚠️ Independent portfolio project on a synthetic transaction dataset.
+**Retail sales: what to change first.** Kaggle Retail Sales dataset. Electronics brought in 40.5% of revenue. Benefit figures are projections. [Code](https://github.com/Ethminer001/retail-sales-analysis)
 
-End-to-end data analytics and machine learning project analyzing 600,000+ payment transactions across 5,000 merchants in a synthetic Nigerian fintech dataset. Built to identify high-risk merchants, detect transaction anomalies, and power strategic decisions for payment companies.
+**Why quarterly revenue fell 15%.** Public Kaggle sales dataset. The South region fell 23%. [Code](https://github.com/Ethminer001/sales-analysis)
 
-**Key Results:**
-- Flagged 973 merchants (19.5%) as Very High Risk representing ₦4.02B (15.3%) of platform volume
-- XGBoost model reached 0.97 ROC-AUC (5-fold CV on the synthetic data), outperforming Logistic Regression and Random Forest
-- Top 10% of merchants drive 65.9% of total platform volume (₦26.3B)
-- Identified peak fraud windows (1–2 AM and 4 PM) enabling targeted real-time monitoring
-- Engineered 40+ features and executed 23 advanced SQL queries (CTEs, window functions, NTILE)
+## Skills
 
-**Tech Stack:** `Python` `XGBoost` `SHAP` `MySQL` `Streamlit` `Scikit-learn` `Pandas`
+Python (pandas, NumPy), SQL (MySQL, PostgreSQL), statistics (hypothesis tests, logistic regression, odds ratios), machine learning (scikit-learn, XGBoost, SHAP), Power BI, Tableau, Streamlit, Plotly, Git.
 
-🔗 [View Code](https://github.com/Ethminer001/fintech-merchant-intelligence) | 🚀 [Live Dashboard](https://fintech-merchant-intelligence-astcmpgnb72vpycszmzfir.streamlit.app/) | 📖 [Case Study](https://github.com/Ethminer001/fintech-merchant-intelligence#readme)
+## Contact
 
----
+[Email](mailto:olowu.tayo200@gmail.com), [LinkedIn](https://www.linkedin.com/in/eriioluwa), [GitHub](https://github.com/Ethminer001)
 
-### 📊 The Last 40 Million — Financial Exclusion in Nigeria
-**Impact:** 26,930 Respondents · 6 Analytical Modules · Logistic Regression on 26,361 Observations · Live Dashboard
-
-Inferential statistical analysis of EFInA's 2023 nationally representative survey to identify which excluded Nigerians are financially ready but structurally blocked — and what each group actually needs. Six modules covering demographic profiling, barrier analysis, hypothesis testing, logistic regression, and a natural experiment on the Naira redesign policy shock.
-
-**Key Results:**
-- Education predicts financial exclusion at 34x odds ratio — the single strongest structural predictor
-- Financial exclusion in Nigeria is primarily a poverty problem, not a distance problem: "not enough money" differed by just 0.2 percentage points between rural and urban excluded adults
-- Only 0.8% of excluded adults responded to the 2023 cash crisis — structural barriers don't move with policy shocks
-- Gender loses statistical significance entirely after controlling for education, income, sector, and region
-- McFadden R² = 0.2590 on logistic regression; Cramér's V hierarchy confirms education as dominant factor
-
-**Tech Stack:** `Python` `statsmodels` `SciPy` `Logistic Regression` `Chi-Square` `EFInA A2F 2023` `HTML Dashboard`
-
-🔗 [View Code](https://github.com/Ethminer001/the-last-40-million) | 🌐 [Live Dashboard](https://the-last-40-million.vercel.app) | 📖 [Case Study](https://github.com/Ethminer001/the-last-40-million#readme)
-
----
-
-### 📣 Nigerian Fintech Marketing Channel Analysis
-**Impact:** $0.74 vs $2.09 CPA · Google vs Facebook · Power BI Dashboard
-
-> ⚠️ Independent portfolio project using 100% synthetic data. Not affiliated with any company. Dollar figures are model outputs on synthetic campaigns, not real results.
-
-End-to-end marketing channel analysis comparing Google Ads vs Facebook Ads across 500 synthetic campaigns, 10 Nigerian industries, and 12 months of data. Answered the business question: which platform should a Nigerian fintech company invest in?
-
-**Key Results:**
-- Google wins on efficiency: $0.74 CPA vs $2.09, and acquires ~3x more customers per naira
-- Facebook wins at scale: larger audience reach and higher ARPU ($71 vs $51)
-- On the synthetic spend, the efficiency gap compounds to a large total-profit difference in Google's favour
-- Built 23 SQL queries from basic aggregations to advanced window functions
-- Delivered a 3-page interactive Power BI dashboard and formal recommendation report
-
-**Tech Stack:** `Python` `Plotly` `MySQL` `Power BI` `Pandas` `Window Functions` `CTEs`
-
-🔗 [View Code](https://github.com/Ethminer001/nigerian-fintech-marketing-analysis) | 📖 [Case Study](https://github.com/Ethminer001/nigerian-fintech-marketing-analysis#readme)
-
----
-
-### 📞 Customer Churn Prediction
-**Impact:** $1.73M Revenue at Risk · 411% Year 1 ROI · 84.2% ROC-AUC
-
-Built a Random Forest churn model on 7,043 telecom subscribers. Contract type was the strongest predictor — month-to-month customers churned at 5x the rate of annual holders. Identified 1,200 high-risk customers representing $1.73M in annual revenue at risk. Retention strategy targeting contract migration and early-tenure onboarding projects $577K protected in Year 1 at 411% ROI.
-
-**Tech Stack:** `Python` `Scikit-learn` `Random Forest` `Pandas` `ROI Analysis`
-
-🔗 [View Code](https://github.com/Ethminer001/customer-churn-prediction) | 📖 [Case Study](https://github.com/Ethminer001/customer-churn-prediction#readme)
-
----
-
-### 🔍 Independent Validation & Analytical Governance — Measurement Infrastructure
-**Impact:** Multi-Module Validation Framework · Founder-Reviewed Sign-Off
-
-Serving as independent validation owner for a measurement infrastructure company building spend, financing, and risk signals for insurers, fintechs, and health platforms. Own post-run validation plus upstream scenario design, edge-case review, and interpretability risk assessment. Built a multi-module Python validation framework to reperform signal computations independently from raw inputs, catching computational defects, mapping errors, and data integrity issues before founder sign-off. Established audit trails using SHA-256 hash verification, reconciliation checklists, and structured exception logging to separate blocking defects from bounded caveats.
-
-**Tech Stack:** `Python` `SQL` `Statistical Validation` `SHA-256 Verification` `Audit Methodology` `Signal Integrity`
-
-📖 Case Study — Available on Request
-
----
-
-### 💰 Sales Performance Diagnostic
-**Impact:** 15% Quarterly Decline Diagnosed · $47K South Region Loss Identified
-
-Diagnosed a 15% quarterly revenue decline across regions, products, and customer segments. The South region declined 23% — $47K in lost revenue — driven by an 18% drop in the Consumer segment. Delivered targeted recommendations including a $15K email reactivation campaign for 340 lapsed customers and bundled promotions on underperforming product categories.
-
-**Tech Stack:** `SQL` `Python` `Pandas` `Matplotlib`
-
-🔗 [View Code](https://github.com/Ethminer001/sales-analysis) | 📖 [Case Study](https://github.com/Ethminer001/sales-analysis#readme)
-
----
-
-### 🏥 Patient Retention Analysis
-**Impact:** $2.37M Projected Recovery · 0.84 ROC-AUC · 110,527 Appointments
-
-Analyzed 110,527 medical appointments (62,299 patients) from the Kaggle no-show dataset to identify drivers of a 30% no-show rate. SMS reminders and booking advance time were the strongest predictors. Built a stacking ensemble (Random Forest, Gradient Boosting, XGBoost) at **0.84 test ROC-AUC** with SMOTE balancing, segmented patients by risk tier, and designed three interventions projected to prevent 13,000+ no-shows and recover $2.37M in Year 1.
-
-**Tech Stack:** `Python` `Scikit-learn` `XGBoost` `Random Forest` `Stacking` `SMOTE` `SQL`
-
-🔗 [View Code](https://github.com/Ethminer001/patient-retention-analysis) | 📖 [Case Study](https://github.com/Ethminer001/patient-retention-analysis#readme)
-
----
-
-### 🛒 Retail Sales Intelligence
-**Impact:** $262K Year 1 Net Benefit · 577% ROI · 2,000 Transactions Analyzed
-
-Analyzed 2,000 retail transactions across Electronics, Clothing, and Beauty to optimize pricing, staffing, and inventory. Electronics drives 40.5% of total revenue. Peak sales at 7PM and Saturday. Identified VIP customer retention, dynamic pricing, and seasonal inventory as the three highest-ROI interventions — projecting $262K net benefit and 577% ROI in Year 1.
-
-**Tech Stack:** `SQL` `Python` `Pandas` `Seaborn`
-
-🔗 [View Code](https://github.com/Ethminer001/retail-sales-analysis) | 📖 [Case Study](https://github.com/Ethminer001/retail-sales-analysis#readme)
-
----
-
-## 🛠️ Technical Skills
-
-| Category | Tools |
-|---|---|
-| Languages | Python, SQL |
-| ML Libraries | Scikit-learn, XGBoost, SHAP, SMOTE, statsmodels |
-| Data | Pandas, NumPy, Matplotlib, Seaborn, Plotly |
-| Databases | MySQL, PostgreSQL |
-| BI Tools | Power BI, Tableau, Streamlit |
-| Statistical Methods | Logistic Regression, Chi-Square, Hypothesis Testing, Confidence Intervals, Odds Ratios |
-| Other | Git, GitHub, Excel, Jupyter |
-
----
-
-## 🌐 Live Portfolio
-
-[**→ Visit ethminer001.github.io**](https://Ethminer001.github.io)
-
----
-
-## 🤝 Let's Connect
-
-Open to Data Analyst and Data Scientist roles — Lagos, Nigeria and Remote.
-
-- 💼 [LinkedIn](https://www.linkedin.com/in/eriioluwa)
-- 💻 [GitHub](https://github.com/Ethminer001)
-- 📧 [Email](mailto:olowu.tayo200@gmail.com)
-
----
-
-<div align="center">
-
-*Last Updated: April 2026 · Lagos, Nigeria*
-
-[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/Ethminer001)
-
-</div>
+The site is a single static page (`index.html`) with a light and dark theme.

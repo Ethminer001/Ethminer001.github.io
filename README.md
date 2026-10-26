@@ -10,9 +10,9 @@ Each case study states where its data came from. Synthetic data is made up for p
 
 **Current role: Data and Validation Analyst.** Independent validation of a measurement platform that sells spend, financing and risk signals. I recompute each signal from raw inputs and keep an audit trail. Details are private; the case study is available on request.
 
-**Ten checks on 3,164 field records from north-east Nigeria.** Real data: IOM Displacement Tracking Matrix, Rounds 51 and 52. 13.3% of records fail at least one hard check. [Read the study](https://olowu-displacement-tracking-matrix.netlify.app/)
+**Ten checks on 3,164 field records from north-east Nigeria.** Real data: IOM Displacement Tracking Matrix, Rounds 51 and 52. 13.3% of records fail at least one hard check. [Read the study](https://olowu-displacement-tracking-matrix.netlify.app/), [code](https://github.com/Ethminer001/nigeria-dtm-field-validation)
 
-**What 71 Shopify stores do with price.** Real data: public catalogues, 22,956 products. 60% of products end in a round number and 20% end in .99 or a 9. [Read the study](https://olowu-pricing-study.netlify.app/)
+**What 71 Shopify stores do with price.** Real data: public catalogues, 22,956 products. 60% of products end in a round number and 20% end in .99 or a 9. [Read the study](https://olowu-pricing-study.netlify.app/), [code](https://github.com/Ethminer001/dtc-pricing-study)
 
 **The Last 40 Million: financial exclusion in Nigeria.** Real data: EFInA 2023 survey, 26,930 adults. Education is the strongest predictor of exclusion. [Dashboard](https://the-last-40-million.vercel.app), [code](https://github.com/Ethminer001/the-last-40-million)
 

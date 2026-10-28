@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Olowu Abraham Aduragbemi | Data Analyst</title>
-<meta name="description" content="Data analyst and data scientist in Lagos, Nigeria. Case studies on fintech risk, financial inclusion, pricing and field-data quality.">
+<meta name="description" content="Data analyst and data scientist in Lagos, Nigeria. Case studies on payment reconciliation, health facility registries, antenatal care, fintech risk, financial inclusion, pricing and field-data quality.">
 <meta name="color-scheme" content="light dark">
 <meta property="og:title" content="Olowu Abraham Aduragbemi | Data Analyst">
-<meta property="og:description" content="Ten case studies: fintech risk, financial inclusion, pricing, field-data quality and more. Each one says what the data is and what it cannot show.">
+<meta property="og:description" content="Thirteen case studies: payment reconciliation, health facility registries, antenatal care, financial inclusion, pricing, field-data quality and more. Each one says what the data is and what it cannot show.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ethminer001.github.io/">
 <script>
@@ -241,7 +241,7 @@
       <p class="status reveal">Open to Data Analyst and Data Scientist roles. Lagos or remote.</p>
       <h1 class="reveal">Olowu Abraham Aduragbemi</h1>
       <p class="role reveal">Data analyst and data scientist, Lagos, Nigeria</p>
-      <p class="intro reveal">I work with messy data. My reports say what it shows and where it stops showing anything. Fintech risk, financial inclusion, pricing, and the quality of field data.</p>
+      <p class="intro reveal">I work with messy data. My reports say what it shows and where it stops showing anything. Payment reconciliation, health facility registries, antenatal care, financial inclusion, pricing, and the quality of field data.</p>
       <div class="actions reveal">
         <a class="btn primary" href="#work">See the work</a>
         <a class="btn" href="#contact">Get in touch</a>
@@ -253,8 +253,8 @@
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">Selected work</p>
-        <h2>Ten case studies</h2>
-        <p class="sec-note">Each card says where its data came from. Synthetic data is made up for practice. Projected figures are estimates.</p>
+        <h2>Thirteen case studies</h2>
+        <p class="sec-note">Each card says where its data came from. Synthetic and sample data are made up for practice. Projected figures are estimates.</p>
       </div>
 
       <div class="stack">
@@ -345,6 +345,85 @@
         </div>
       </article>
 
+
+      <article class="card reveal">
+        <div>
+          <h3>Does the money match the orders? Reconciling 99,441 e-commerce orders</h3>
+          <span class="source"><b>Real data.</b> Olist's public Brazilian e-commerce data: orders, billed items and payments, 2016 to 2018.</span>
+          <p>I matched the order book, the billing lines and the payment log for every order. Where they disagreed I traced the cause instead of counting the gap as lost money.</p>
+          <ul class="facts">
+            <li>58 orders looked underpaid by R$ 4,699.71 in total. All come from 3 sellers whose billed freight is a copy of the item price, so the billing table looks wrong, not the payments.</li>
+            <li>1,231 cancelled orders still show a payment (R$ 269,735.11). The payment table has no refund column, so I flagged them for a refund check, not as losses.</li>
+            <li>Another 554 orders differ by installment interest, by a few cents, or because the buyer paid nothing. I did not count them as defects.</li>
+          </ul>
+          <p class="limits">Limits: the causes are my reading of the data, and Olist has not confirmed them. Five of the copy-bug orders show a small overpayment instead of a shortfall and sit in other groups.</p>
+          <div class="links"><a class="btn small" href="https://github.com/Ethminer001/olist-payment-reconciliation" target="_blank" rel="noopener">Code</a><a class="btn small" href="https://github.com/Ethminer001/olist-payment-reconciliation#readme" target="_blank" rel="noopener">Write-up</a></div>
+        </div>
+        <div aria-label="Flagged orders by cause">
+          <div class="big" data-count="1.38" data-decimals="2" data-suffix="%" data-prefix="">1.38%</div>
+          <p class="big-label">of orders, 1,370 of 99,441, have a real mismatch or a broken record. 98.07% match to the cent.</p>
+          <div class="bars">
+            <div class="brow"><div class="bl"><span>Cancelled, but a payment is recorded</span><b>1,231</b></div><div class="track"><div class="fill" style="width:100%;background:var(--seg-hard)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Freight copied from price</span><b>58</b></div><div class="track"><div class="fill" style="width:4.7%;background:var(--seg-review)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Missing dates or zero installments</span><b>47</b></div><div class="track"><div class="fill" style="width:3.8%;background:var(--seg-review)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Other billing and payment gaps</span><b>34</b></div><div class="track"><div class="fill" style="width:2.8%;background:var(--seg-review)"></div></div></div>
+          </div>
+          <p class="chart-note">Orders flagged, by cause. Bars are scaled to the largest group.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div>
+          <h3>Auditing Nigeria's health facility registry: 46,146 records</h3>
+          <span class="source"><b>Real data.</b> GRID3 Nigeria health facilities (June 2024 release, 46,146 records) and the Nigeria Healthsites export (September 2026, 7,253 records). Both are public.</span>
+          <p>I checked the national registry on its own for duplicates, wrong values and conflicting coordinates, then matched the newer Healthsites file to it by distance and name.</p>
+          <ul class="facts">
+            <li>98.55% of the 11,753 "Unknown" operating statuses come from two source feeds. Re-checking those would close most of the gap.</li>
+            <li>168 rows hold two sets of coordinates that disagree, by up to 2.29 km.</li>
+            <li>384 named facilities in the Healthsites file sit more than 250 m from any registry entry. The registry file is older, so some may already be in a later release.</li>
+          </ul>
+          <p class="limits">Limits: matches are probable, not confirmed, because the name check ignores words like clinic and hospital. I do not know why the faults arose.</p>
+          <div class="links"><a class="btn small" href="https://github.com/Ethminer001/nigeria-health-facility-registry-audit" target="_blank" rel="noopener">Code</a><a class="btn small" href="https://github.com/Ethminer001/nigeria-health-facility-registry-audit#readme" target="_blank" rel="noopener">Write-up</a></div>
+        </div>
+        <div aria-label="Registry faults by type">
+          <div class="big" data-count="1.7" data-decimals="1" data-suffix="%" data-prefix="">1.7%</div>
+          <p class="big-label">of facilities, 786 of 46,146, have a duplicate, format or location fault. Another 16,223 have an unverified status or owner.</p>
+          <div class="bars">
+            <div class="brow"><div class="bl"><span>Similar name within 100 m, same ward</span><b>504</b></div><div class="track"><div class="fill" style="width:100%;background:var(--seg-hard)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Coordinates disagree by over 10 m</span><b>163</b></div><div class="track"><div class="fill" style="width:32.3%;background:var(--seg-review)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Same name in the same ward</span><b>68</b></div><div class="track"><div class="fill" style="width:13.5%;background:var(--seg-review)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Wrong type value, shared GPS point, exact duplicate</span><b>51</b></div><div class="track"><div class="fill" style="width:10.1%;background:var(--seg-review)"></div></div></div>
+          </div>
+          <p class="chart-note">Faulty facilities by type, scaled to the largest group. Each facility is counted once.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div>
+          <h3>Antenatal care in Nigeria by state, 2018 and 2024</h3>
+          <span class="source"><b>Real data.</b> The DHS Program's published state figures for the 2018 and 2024 Nigeria DHS: 37 states, 48 indicators, 6,751 rows.</span>
+          <p>I compared antenatal care, iron supplementation and child stunting across states. The first thing the data showed was that the two surveys do not define a skilled provider the same way, so that comparison would mislead.</p>
+          <ul class="facts">
+            <li>Any antenatal care in Kebbi fell from 52.8% to 23.6%, a change well outside sampling error.</li>
+            <li>In nine states, 26% to 41% of women could not say how long they took iron, so their 90+ day figures are lower bounds.</li>
+            <li>The stunting changes between surveys depend on an assumed design effect: ten states are flagged at 1.0 and one at 2.0. I do not rely on them.</li>
+          </ul>
+          <p class="limits">Limits: published estimates only, with intervals built on a design effect I assumed. The data show how states differ, not why.</p>
+          <div class="links"><a class="btn small" href="https://github.com/Ethminer001/nigeria-anc-nutrition-by-state" target="_blank" rel="noopener">Code</a><a class="btn small" href="https://github.com/Ethminer001/nigeria-anc-nutrition-by-state#readme" target="_blank" rel="noopener">Write-up</a></div>
+        </div>
+        <div aria-label="Adamawa antenatal care, 2018 and 2024">
+          <div class="big" data-count="49" data-decimals="0" data-suffix=" points" data-prefix="">49 points</div>
+          <p class="big-label">apparent fall in skilled-provider care in Adamawa, 2018 to 2024. Total attendance barely moved, because the survey changed who counts as skilled.</p>
+          <div class="bars" style="margin-top:24px">
+            <div class="brow"><div class="bl"><span>Any antenatal care, 2018</span><b>85.7%</b></div><div class="track"><div class="fill" style="width:85.7%;background:var(--seg-pass)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Any antenatal care, 2024</span><b>84.4%</b></div><div class="track"><div class="fill" style="width:84.4%;background:var(--seg-pass)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Skilled provider, 2018</span><b>83.4%</b></div><div class="track"><div class="fill" style="width:83.4%;background:var(--seg-review)"></div></div></div>
+            <div class="brow"><div class="bl"><span>Skilled provider, 2024</span><b>33.9%</b></div><div class="track"><div class="fill" style="width:33.9%;background:var(--seg-hard)"></div></div></div>
+          </div>
+          <p class="chart-note">Women with a birth in the three years before each survey. The 2024 report counts only doctors and nurses/midwives as skilled.</p>
+        </div>
+      </article>
+
       </div>
       <div class="grid2">
 
@@ -369,9 +448,9 @@
         </article>
 
         <article class="card compact reveal">
-          <span class="tag">Public Kaggle dataset</span>
+          <span class="tag">Sample data (Kaggle)</span>
           <h3>Customer churn prediction for a telecom</h3>
-          <span class="source">Kaggle Telco Customer Churn dataset, 7,043 customers. The savings below are projections.</span>
+          <span class="source">Kaggle Telco Customer Churn dataset: IBM sample data about a fictional telecom, 7,043 customers. The savings below are projections.</span>
           <div class="big" data-count="5" data-decimals="0" data-suffix="&times;" data-prefix="">5&times;</div>
           <p class="big-label">times the churn rate for month-to-month customers compared with annual contracts.</p>
           <p>A random forest (ROC-AUC 0.842, against 0.785 for logistic regression) found 1,200 high-risk customers worth $1.73M a year. A plan aimed at contract moves and early-tenure customers is projected to protect $577K in year one, a 411% return.</p>
@@ -379,9 +458,9 @@
         </article>
 
         <article class="card compact reveal">
-          <span class="tag">Public Kaggle dataset</span>
+          <span class="tag">Real data (Kaggle)</span>
           <h3>Why patients miss appointments</h3>
-          <span class="source">Kaggle Medical Appointment No-Shows dataset: 110,527 appointments for 62,299 patients, April to June 2016.</span>
+          <span class="source">Kaggle Medical Appointment No-Shows dataset: 110,527 real appointments for 62,299 patients in Brazil's public health system, April to June 2016.</span>
           <div class="big" data-count="30" data-decimals="0" data-suffix="%" data-prefix="">30%</div>
           <p class="big-label">of appointments were no-shows.</p>
           <p>SMS reminders and how far ahead the booking was made were the strongest predictors. A stacked model (random forest, gradient boosting, XGBoost) reached 0.84 ROC-AUC on the test set. Three interventions are projected to prevent 13,000+ no-shows and recover $2.37M in year one.</p>
@@ -389,9 +468,9 @@
         </article>
 
         <article class="card compact reveal">
-          <span class="tag">Public Kaggle dataset</span>
+          <span class="tag">Practice data (Kaggle)</span>
           <h3>Retail sales: what to change first</h3>
-          <span class="source">Kaggle Retail Sales dataset: 2,000 transactions across Electronics, Clothing and Beauty, 2023. The benefit figures are projections.</span>
+          <span class="source">Kaggle Retail Sales dataset, which looks synthetic: 2,000 transactions across Electronics, Clothing and Beauty, 2023. The benefit figures are projections.</span>
           <div class="big" data-count="40.5" data-decimals="1" data-suffix="%" data-prefix="">40.5%</div>
           <p class="big-label">of revenue came from Electronics.</p>
           <p>Sales peak at 2 PM and 7 PM, and Saturday is the strongest day. I ranked three changes (VIP retention, dynamic pricing, seasonal stock) and projected a $262K net benefit in year one, a 577% return.</p>
@@ -399,9 +478,9 @@
         </article>
 
         <article class="card compact reveal">
-          <span class="tag">Public Kaggle dataset</span>
+          <span class="tag">Sample data (Kaggle)</span>
           <h3>Why quarterly revenue fell 15%</h3>
-          <span class="source">A public Kaggle sales dataset loaded into MySQL, split by region, product and customer segment.</span>
+          <span class="source">A Kaggle sales dataset that appears to be the Superstore sample data (a fictional retailer), loaded into MySQL and split by region, product and customer segment.</span>
           <div class="big" data-count="23" data-decimals="0" data-suffix="%" data-prefix="">23%</div>
           <p class="big-label">fall in the South region, a $47K loss.</p>
           <p>The South fell most, driven by an 18% drop in the Consumer segment. I recommended an email campaign to 340 lapsed customers, with an expected lift of $15K, and bundles on weak product categories.</p>

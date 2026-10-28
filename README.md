@@ -4,7 +4,7 @@ Data analyst and data scientist in Lagos, Nigeria. Open to data analyst and data
 
 Live site: https://ethminer001.github.io/
 
-Each case study states where its data came from. Synthetic data is made up for practice. Projected figures are estimates, not measured results.
+Each case study states where its data came from. Synthetic and sample data are made up for practice. Projected figures are estimates, not measured results.
 
 ## Case studies
 
@@ -16,17 +16,23 @@ Each case study states where its data came from. Synthetic data is made up for p
 
 **The Last 40 Million: financial exclusion in Nigeria.** Real data: EFInA 2023 survey, 26,930 adults. Education is the strongest predictor of exclusion. [Dashboard](https://the-last-40-million.vercel.app), [code](https://github.com/Ethminer001/the-last-40-million)
 
+**Does the money match the orders? Reconciling 99,441 e-commerce orders.** Real data: Olist's public Brazilian orders, billing lines and payments. 1,370 orders (1.38%) have a real mismatch; 1,231 cancelled orders still show a payment but the data has no refund column. [Write-up and code](https://github.com/Ethminer001/olist-payment-reconciliation)
+
+**Auditing Nigeria's health facility registry.** Real data: GRID3 (46,146 records) and Nigeria Healthsites (7,253 records). 786 facilities have a duplicate, format or location fault; 98.55% of the "Unknown" statuses come from two source feeds. [Write-up and code](https://github.com/Ethminer001/nigeria-health-facility-registry-audit)
+
+**Antenatal care in Nigeria by state, 2018 and 2024.** Real data: the DHS Program's published state figures. Skilled-provider care looks 49 points lower in Adamawa only because the survey definition changed. [Write-up and code](https://github.com/Ethminer001/nigeria-anc-nutrition-by-state)
+
 **Merchant risk scoring on 600,000 transactions.** Synthetic data. 973 of 5,000 merchants flagged very high risk. [Dashboard](https://fintech-merchant-intelligence-astcmpgnb72vpycszmzfir.streamlit.app/) (it sleeps when unused; click the wake-up button), [code](https://github.com/Ethminer001/fintech-merchant-intelligence)
 
 **Google Ads or Facebook Ads for a Nigerian fintech.** Synthetic data. $0.74 against $2.09 cost per customer. [Code](https://github.com/Ethminer001/nigerian-fintech-marketing-analysis)
 
-**Customer churn prediction.** Kaggle Telco Customer Churn dataset. Month-to-month customers churn at 5 times the rate of annual-contract customers. Savings figures are projections. [Code](https://github.com/Ethminer001/customer-churn-prediction)
+**Customer churn prediction.** Kaggle Telco Customer Churn dataset (IBM sample data about a fictional telecom). Month-to-month customers churn at 5 times the rate of annual-contract customers. Savings figures are projections. [Code](https://github.com/Ethminer001/customer-churn-prediction)
 
-**Why patients miss appointments.** Kaggle Medical Appointment No-Shows dataset. 30% of appointments were no-shows; test ROC-AUC 0.84. Recovery figures are projections. [Code](https://github.com/Ethminer001/patient-retention-analysis)
+**Why patients miss appointments.** Real data: Kaggle Medical Appointment No-Shows dataset (Brazil's public health system). 30% of appointments were no-shows; test ROC-AUC 0.84. Recovery figures are projections. [Code](https://github.com/Ethminer001/patient-retention-analysis)
 
-**Retail sales: what to change first.** Kaggle Retail Sales dataset. Electronics brought in 40.5% of revenue. Benefit figures are projections. [Code](https://github.com/Ethminer001/retail-sales-analysis)
+**Retail sales: what to change first.** Kaggle Retail Sales dataset (looks synthetic). Electronics brought in 40.5% of revenue. Benefit figures are projections. [Code](https://github.com/Ethminer001/retail-sales-analysis)
 
-**Why quarterly revenue fell 15%.** Public Kaggle sales dataset. The South region fell 23%. [Code](https://github.com/Ethminer001/sales-analysis)
+**Why quarterly revenue fell 15%.** Kaggle sales dataset (appears to be the fictional Superstore sample data). The South region fell 23%. [Code](https://github.com/Ethminer001/sales-analysis)
 
 ## Skills
 
